@@ -1,0 +1,4 @@
+CompileFlags:
+  Add:
+    - -IC:/devkitPro/devkitARM/arm-none-eabi/include
+    - -IC:/devkitPro/devkitARM/lib/gcc/arm-none-eabi/15.1.0/include
