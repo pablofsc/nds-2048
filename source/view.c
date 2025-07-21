@@ -67,14 +67,22 @@ void print_menu_option(bool is_selected, char text[]) {
 }
 
 void print_menu(MenuSelection selection) {
-  consoleSelect(&screen_top);
-  consoleClear();
-
   consoleSelect(&screen_btm);
   consoleClear();
 
   print_menu_option(selection == START_GAME, "Start a new game");
   print_menu_option(selection == QUIT, "Quit");
+}
+
+void print_title() {
+  consoleSelect(&screen_top);
+  consoleClear();
+
+  iprintf("\n\n\n\n\n\n\n\n");
+  iprintf("--------------------------------\n");
+  iprintf("            NDS-2048            \n\n");
+  iprintf("  github.com/pablofsc/nds-2048  \n");
+  iprintf("--------------------------------");
 }
 
 void print_grid(bool is_game_over, bool is_paused) {

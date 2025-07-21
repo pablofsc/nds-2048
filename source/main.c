@@ -21,6 +21,7 @@ int main() {
     u32 keys_down = keysDown();
 
     if (game_state == IN_MENU) {
+      print_title();
       print_menu(menu_selection);
 
       if (keys_down & KEY_A) {

@@ -6,6 +6,8 @@
 
 void init_consoles();
 
+void print_title();
+
 void print_scoreboard();
 
 void print_menu(MenuSelection selection);
